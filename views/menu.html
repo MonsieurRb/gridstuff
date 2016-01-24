@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <title>Personal Tab</title>
+
+  <link rel="stylesheet" type="text/css" href="css/personal_tab.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/admin.css">
+  <link rel="stylesheet" type="text/css" href="css/backoffice.css">
+
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/personal_tab.js"></script>
+  
+  
+</head> 
+<body>
+
+<!-- Bundle Loading -->
+{foreach $bundles item=bundle}
+<div id="tmp_{$bundle->getID()}" class="bundle">
+{$bundle->getBuffer()}
+</div>
+{/foreach}
+
+<!-- Grid of bundles -->
+{$grid}
+
+</body>
+</html>

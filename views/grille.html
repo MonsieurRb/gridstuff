@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <title>Personal Tab</title>
+
+  <link rel="stylesheet" type="text/css" href="css/jquery.gridster.css">
+  <link rel="stylesheet" type="text/css" href="css/personal_tab.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/admin.css">
+  <link rel="stylesheet" type="text/css" href="css/backoffice.css">
+
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="js/jquery.gridster.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/grille.js"></script>
+  
+  
+</head> 
+<body>
+  <!-- GRIDSTER INIT -->
+  {include file="views/gridster_init.html"}
+
+  <input id='id_employee' value='{$id_employee}' />
+
+  <div class="row">
+    <div id="grille" class="gridster">
+  
+    </div>
+  </div>
+
+  <button id="save_gridster">SAVE LOLOL</button>
+  <button id="load_gridster">LOAD LOLOL</button>
+
+</body>
+</html>

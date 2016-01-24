@@ -1,0 +1,50 @@
+<div id="gni" class="col-lg-12" style="padding: 0 0 0 0;"></div>
+
+<script>
+var gridster;
+
+$(function(){
+    	w = $('#gni').width() - 100;
+
+      gridster = $("#grille").gridster({
+          widget_margins: [2, 2],
+          widget_base_dimensions: [w/12, 20],
+          max_cols: 12,
+          serialize_params: function($w, wgd) { 
+                    return { 
+                           id: $($w).attr('id_bundle'), 
+                           col: wgd.col, 
+                           row: wgd.row, 
+                           size_x: wgd.size_x, 
+                           size_y: wgd.size_y 
+                    };
+                }
+      }).data('gridster');
+
+      {if $json_gridster}
+
+
+      $.each({$json_gridster}, function(i) {
+          gridster.add_widget('<div id="bundle_'+this.id+'" id_bundle="'+this.id+'">'+this.id+'</div>', this.size_x, this.size_y, this.col, this.row);     
+      });
+
+
+
+      {else}
+
+
+      var widgets = [
+          {foreach $bundles item=bundle}
+          ['<div id="bundle_{$bundle->getID()}" id_bundle="{$bundle->getID()}">{$bundle->getID()}</div>', {$bundle->getWidth()}, {$bundle->getHeight()}],
+          {/foreach}
+      ];
+
+      $.each(widgets, function(i, widget){
+          gridster.add_widget.apply(gridster, widget)
+      });
+
+      {/if}
+
+});
+
+</script>

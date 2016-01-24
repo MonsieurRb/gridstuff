@@ -1,0 +1,198 @@
+#container {
+	width: 1600px;
+}
+
+.path_bar { display: none; }
+
+.right { text-align: right; }
+.middle { text-align: center; }
+.left { text-align: left; }
+
+tbody tr { font-size: 90%; }
+
+.badge-danger {
+    background-color: #d43f3a !important;
+}
+
+.badge-warning {
+    background-color: #d58512 !important;
+}
+
+.badge-success {
+    background-color: #398439 !important;
+}
+
+.badge-info {
+    background-color: #269abc !important;
+}
+
+.badge-inverse {
+    background-color: #333333 !important;
+}
+
+.badge-module {
+    background-color: #df0067 !important;
+}
+
+.badge-theme {
+    background-color: #251b5b !important;
+}
+
+.badge-service {
+    background-color: #6d6d6d !important;
+}
+
+.badge-fund {
+    background-color: #F28157 !important;
+}
+
+.row { background: none; }
+
+.editor-prestashop {
+    background: #fdfdfd none repeat scroll 0 0;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    color: #363a41;
+    font-size: 0.9em;
+    font-style: normal;
+    letter-spacing: 0.5px;
+    line-height: 17px;
+    padding: 0 4px;
+    text-transform: uppercase;
+}
+
+.pink {
+    color: #df0067;
+}
+
+table.dataTable tr.odd { background-color: #e5e5e5; }
+
+select[disabled="disabled"], input[disabled="disabled"], textarea[disabled="disabled"] {
+    border: 1px solid #cccccc !important;
+    color: #aaaaaa !important;
+}
+
+.form-group {
+    border: 1px solid #d3d8db;
+    margin: 20px 0 0;
+    min-height: 45px;
+    padding: 7px 10px;
+    position: relative;
+    transition: border-color 0.1s ease-in 0s;
+}
+
+.form-group > label {
+    background: white none repeat scroll 0 0;
+    float: left;
+    font-family: Roboto,Tahoma,Verdana,sans-serif;
+    margin-bottom: 5px;
+    margin-top: -15px;
+    padding: 0 5px;
+    width: auto;
+    text-align: left;
+    font-weight: normal;
+}
+
+.btn-ps {
+    background-color: #8fc04d !important;
+    color: white !important;
+}
+
+#bo_search_submit {
+    box-sizing: border-box !important;
+}
+
+/* Avatars */
+.tiny_avatar {
+    width: 30px;
+    height: 35px;
+}
+
+.mini-avatar {
+    width: 60px !important;
+    height: 70px !important;
+}
+
+.large-avatar {
+    width: 120px;
+    height: 140px;
+}
+
+.menu-label {
+    font-size: 2em; 
+    line-height: 25px;
+}
+
+.country-flag {
+    width: 40px !important;
+    height: 30px !important; 
+    margin: auto;
+}
+
+
+/* OLD CSS TRICKS TO ADAPT TO BOOTSTRAP */
+
+
+.table tbody tr { font-size: 120%; }
+.table thead tr { font-size: 120%; }
+
+
+fieldset {
+    border: 1px solid #d3d8db;
+    margin: 20px 0 0;
+    min-height: 45px;
+    padding: 7px 10px;
+    position: relative;
+    transition: border-color 0.1s ease-in 0s;
+    font-size: 1em !important;
+    border: 1px solid #c0c0c0 !important;
+    margin: 5px 2px!important;
+    padding: 0.35em 0.625em 0.75em!important;
+}
+
+fieldset > legend {
+    background: white none repeat scroll 0 0;
+    float: left;
+    font-family: Roboto,Tahoma,Verdana,sans-serif;
+    margin-bottom: 5px;
+    margin-top: -15px;
+    padding: 0 5px;
+    width: auto;
+    text-align: left;
+    font-weight: normal;
+    font-size: 12px !important;
+}
+
+.table > thead > tr > th, 
+.table > tbody > tr > th, 
+.table > tfoot > tr > th, 
+.table > thead > tr > td, 
+.table > tbody > tr > td, 
+.table > tfoot > tr > td {
+    padding: 1px !important;
+}
+
+.header_module {
+    height: 35px;
+}
+
+/* MENU GENERAL */
+.nav > li > a {
+    padding: 5px 5px !important;
+}
+
+#menu_newbo {
+    margin-top: 12px;
+}
+
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
+}
+
+#content {
+    padding: 1.25em !important;
+}
+
+.dropdown-menu {
+    font-size: 12px !important;
+}
